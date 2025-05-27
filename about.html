@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tentang Kami | Delta Dunia
+  </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/delta-dunia.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo3.png" alt="Delta Dunia TBK Logo">
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <style>
+          /* CSS */
+
+          .dropdown ul li a {
+
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+          }
+
+          .dropdown ul li a::after {
+            content: '';
+            display: block;
+            width: 60%;
+            /* Ubah panjang garis sesuai keinginan */
+            height: 2px;
+            background-color: #008a0e;
+            /* Warna garis */
+            position: absolute;
+            left: 9%;
+            /* Untuk memusatkan garis */
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          .dropdown ul li a:hover::after {
+            transform: scaleX(1);
+
+
+          }
+        </style>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Binis Kami</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+            <ul>
+              <li><a href="bisnis/buma.html">Buma</a></li>
+              <li><a href="bisnis/buma-australia.html">Buma Australia</a></li>
+              <li><a href="bisnis/btech.html">BTech</a></li>
+              <li><a href="bisnis/biru.html">Biru</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="active">Tentang Kami</a></li>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="blog.html">Rilis Berita</a></li>
+              <li><a href="#">Liputan Berita</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <style>
+      .page-title {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch; /* Pastikan teks dan gambar memiliki tinggi penuh */
+        padding: 0; /* Hilangkan padding agar gambar dan teks menempel langsung */
+        height: 450px; /* Tetapkan tinggi tetap untuk gambar dan teks */
+      }
+      
+      .content-wrapper {
+        background-color: #007598;
+        padding: 40px; /* Tambahkan padding untuk jarak yang sama rata di sekitar teks */
+        max-width: 30%; /* Sesuaikan lebar konten teks */
+        z-index: 2; /* Pastikan teks berada di depan gambar dan overlay */
+        height: 100%; /* Pastikan konten teks mengisi seluruh tinggi kontainer */
+        display: flex;
+        justify-content: center; /* Pastikan teks berada di tengah secara horizontal */
+        align-items: center; /* Pastikan teks berada di tengah secara vertikal */
+        box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran elemen */
+      }
+      
+      .image-container {
+        background-image: url('assets/img/tentang/qk0xwBklOsVSSi.png');
+        background-size: cover;
+        background-position: center;
+        flex: 1; /* Membuat gambar menyesuaikan sisa ruang yang tersedia */
+        height: 100%; /* Pastikan gambar mengikuti tinggi kontainer */
+        margin: 0; /* Hilangkan margin untuk memastikan tidak ada ruang kosong */
+        position: relative;
+      }
+      
+      .image-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi 50% */
+        z-index: 1; /* Overlay berada di depan gambar tetapi di belakang teks */
+      }
+      
+      .text-content h3, .text-content p {
+        margin: 0;
+        color: #ffffff;
+        text-align: center; /* Teks berada di tengah dalam wrapper */
+      }
+      </style>
+      
+      <div class="page-title">
+        <div class="content-wrapper">
+          <div class="text-content">
+            <h3>Memberdayakan Hari Ini untuk Mewujudkan Hari Esok</h3>
+          </div>
+        </div>
+        <div class="image-container"></div>
+      </div>
+      
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <!-- <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg"></div> -->
+
+          <div class="col-lg-12 full-width" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title"></h2>
+            <div class="our-story">
+
+              <h3>Tentang Kami</h3>
+              <p>Delta Dunia Group adalah perusahaan induk yang berbasis di Indonesia dengan portofolio bisnis yang
+                beragam. Kami berada di garis depan inovasi dan keunggulan di industri pertambangan, menawarkan layanan
+                penambangan batu bara yang komprehensif di Indonesia dan Australia. Pada Juni 2024, kami memperluas
+                bisnis ke kepemilikan tambang melalui akuisisi strategis Atlantic Carbon Group, Inc. (ACG), produsen
+                antrasit berkualitas tinggi terkemuka di AS. Akuisisi ini menandai tonggak penting perusahaan, sekaligus
+                meningkatkan kemampuan kami dan memperkuat posisi kami di pasar pertambangan global.
+                <br><br>
+                Keahlian kami melampaui penambangan tradisional; kami memberdayakan sektor pertambangan yang lebih luas
+                dengan teknologi canggih dan menginisiasi program sosial yang mendukung pendidikan dan pengembangan
+                kewirausahaan. Komitmen kami bukan hanya untuk mengekstraksi nilai dari bumi tetapi juga untuk
+                berinvestasi di komunitas dan lingkungan yang kami sentuh.
+                <br><br>
+                Fondasi kami kuat, ditopang oleh kemitraan yang langgeng dan dedikasi terhadap penambangan yang
+                bertanggung jawab, menciptakan peluang kerja, dan meningkatkan kesejahteraan komunitas. Dedikasi ini
+                telah memperkuat peran kami sebagai warga korporat yang dipercaya, yang berdedikasi untuk memberikan
+                nilai yang berkelanjutan dan memelihara lingkungan yang berkelanjutan.
+                <br><br>
+                Dipandu oleh kepemimpinan visioner dan prinsip keuangan yang kuat, kami berkomitmen untuk memberikan
+                nilai tambah bagi seluruh pemangku kepentingan sembari bertransisi menuju ekonomi rendah karbon. Kami
+                berkomitmen kuat untuk mengurangi ketergantungan kami pada batubara termal, membuka jalan bagi masa
+                depan energi yang berkelanjutan melalui inovasi kolaboratif. Tim kami, motor penggerak kesuksesan kami,
+                mencontohkan ketahanan dan keunggulan, yang mendorong ambisi kami untuk pertumbuhan yang berkelanjutan.
+                <br><br>
+                Investasi kami hari ini adalah untuk mewujudkan hari esok. Kami terus membuka jalan dalam teknologi
+                berkelanjutan, eksplorasi mineral, dan solusi energi terbarukan, mempersiapkan masa depan di mana
+                warisan kami selaras dengan aspirasi dunia yang lebih hijau dan berkelanjutan.
+              </p>
+              <!-- <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commo</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+              </ul>
+              <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.</p> -->
+
+              <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="https://youtu.be/mRuH5TLauwI?si=WGyU-mVVoQP4khsC" class="glightbox stretched-link">Tonton
+                  Video</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Counter Section -->
+    <section id="stats-counter" class="stats-counter section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Stats</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Hours Of Support</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Stats Counter Section -->
+
+
+
+
+
+    <!-- Alt Services Section -->
+    <section id="alt-services" class="alt-services section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img
+              src="assets/img/alt-services.jpg" alt=""></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
+              laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                  deleniti atque</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Dine Pad</a></h4>
+                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus
+                  aut eligendi omnis</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Tride clov</a></h4>
+                <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet.
+                  Et eligendi</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Alt Services Section -->
+
+    <!-- Alt Services 2 Section -->
+    <section id="alt-services-2" class="alt-services-2 section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up"
+            data-aos-delay="100">
+            <h3>Enim quis est voluptatibus aliquid consequatur</h3>
+            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus
+              laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
+
+            <div class="row">
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-easel flex-shrink-0"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias </p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Nemo Enim</h4>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiise</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>Dine Pad</h4>
+                  <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-brightness-high flex-shrink-0"></i>
+                <div>
+                  <h4>Tride clov</h4>
+                  <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+
+          </div>
+
+          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/features-3-2.jpg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Alt Services 2 Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Prinsip & Tujuan</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="assets/img/tentang/bumaina-1.png" class="img-fluid" alt="">
+            
+            </div>
+            <div class="member-info text-center">
+              <h4>Kami Berintegritas</h4>
+             
+              <p>Apa yang kami janjikan, itu yang kami berikan dengan kualitas terbaik berdasarkan prinsip moral dan
+                etika serta mengutamakan keselamatan.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="assets/img/tentang/bumaina-2.png" class="img-fluid" alt="">
+             
+            </div>
+            <div class="member-info text-center">
+              <h4>Kami membangun keluarga</h4>
+          
+              <p>Kami menghargai perbedaan dan kontribusi setiap orang. Kami saling terbuka, karena kami tahu bahwa
+                keterbukaan adalah kunci untuk bertumbuh bersama.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="assets/img/tentang/bumaina-3.png" class="img-fluid" alt="">
+            
+            </div>
+            <div class="member-info text-center">
+              <h4>Kami siap menghadapi tantangan</h4>
+          
+              <p>Kami melihat tantangan sebagai peluang, kesempatan untuk menjadi lebih kuat dan tangguh daripada
+                sebelumnya.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+    
+
+            <div class="row gy-5 justify-content-center" style="margin-top: 5px;">
+              <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img src="assets/img/tentang/bumaina-4.png" class="img-fluid" alt="">
+                 
+                </div>
+                <div class="member-info text-center">
+                  <h4>Kami melakukan terobosan baru</h4>
+               
+                  <p>Kami percaya selalu ada sesuatu yang baru di luar sana dan kami bersemangat untuk mencoba inovasi,
+                    teknologi, dan cara kerja baru.</p>
+                </div>
+              </div><!-- End Team Member -->
+
+              <div class="col-lg-4 col-md-6 member"  style="margin-top: 85px;" data-aos="fade-up" data-aos-delay="500">
+                <div class="member-img">
+                  <img src="assets/img/tentang/bumaina-5.png" class="img-fluid" alt="">
+                 
+                </div>
+                <div class="member-info text-center">
+                  <h4>Kami memajukan Indonesia</h4>
+              
+                  <p>Kami mengupayakan penghidupan bersama masyarakat dan melestarikan lingkungan. Apa yang kami lakukan
+                    harus berdampak signifikan bagi orang lain dan bagi bangsa ini. Kami akan terus berkarya untuk
+                    membangun bangsa.</p>
+                </div>
+              </div><!-- End Team Member -->
+            </div>
+          
+
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <style>
+        .subsidiaries-logos {
+          display: flex;
+          justify-content: space-around;
+          /* Mengatur jarak antar gambar */
+          align-items: center;
+          flex-wrap: wrap;
+          /* Agar gambar tetap rapi jika layar lebih kecil */
+          gap: 15px;
+          /* Jarak antar gambar */
+        }
+
+        .subsidiaries-logos img {
+          max-width: 150px;
+          /* Atur ukuran maksimum gambar */
+          height: auto;
+          /* Pastikan rasio gambar tetap terjaga */
+          margin: 10px 0;
+          /* Tambahkan margin agar ada ruang di atas dan bawah gambar */
+        }
+
+        @media (max-width: 768px) {
+          .subsidiaries-logos img {
+            max-width: 120px;
+            /* Sesuaikan ukuran gambar untuk layar lebih kecil */
+          }
+        }
+
+        @media (max-width: 480px) {
+          .subsidiaries-logos img {
+            max-width: 100px;
+            /* Sesuaikan lagi ukuran gambar untuk layar sangat kecil */
+          }
+        }
+
+        .subsidiaries-logos {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+          /* Grid yang fleksibel */
+          gap: 20px;
+          /* Jarak antar gambar */
+          justify-items: center;
+          /* Pusatkan gambar secara horizontal */
+          align-items: center;
+          /* Pusatkan gambar secara vertikal */
+        }
+
+        .subsidiaries-logos img {
+          width: 100%;
+          /* Gambar akan mengikuti lebar kolom */
+          max-width: 150px;
+          /* Ukuran maksimum gambar */
+          height: auto;
+          /* Menjaga rasio aspek gambar */
+        }
+
+        @media (max-width: 768px) {
+          .subsidiaries-logos img {
+            max-width: 120px;
+            /* Menyesuaikan ukuran gambar untuk layar kecil */
+          }
+        }
+
+        @media (max-width: 480px) {
+          .subsidiaries-logos img {
+            max-width: 100px;
+            /* Menyesuaikan lagi ukuran gambar untuk layar sangat kecil */
+          }
+        }
+      </style>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Subsidiaries</h2>
+
+        <div class="subsidiaries-logos">
+          <img src="assets/img/logo2.png" alt="">
+          <img src="assets/img/logo-subsidiaries-6.png" alt="">
+          <img src="assets/img/logo-subsidiaries-3.png" alt="">
+          <img src="assets/img/logo-subsidiaries-4.png" alt="">
+        </div><!-- End Subsidiaries Logos -->
+      </div><!-- End Section Title -->
+
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/values/LepaQmGY0rvrW0dOst.png" class="testimonial-img" alt="">
+                  <h3>Hamid Awaludin</h3>
+                  <h4>Komisaris Utama merangkap Komisaris Independen</h4>
+
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>"Sistem tata kelola perusahaan yang efektif sangat penting untuk keberhasilan investasi yang
+                      berkelanjutan. Kami percaya bahwa perusahaan telah menerapkan praktik tata kelola perusahaan yang
+                      baik secara menyeluruh dan selaras dengan visi, misi, nilai, dan budaya perusahaan."</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/values/9FC7ZENx90DF6enfDNhk.png" class="testimonial-img" alt="">
+                  <h3>Ronald Sutardja </h3>
+                  <h4>Direktur Utama</h4>
+
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>"Dedikasi kami terhadap keunggulan operasional dan solusi inovatif telah membawa kami ke
+                      puncak baru, mencapai pertumbuhan yang memecahkan rekor pada tahun 2023. Dengan terus
+                      mendiversifikasi bisnis kami, kami memberikan nilai yang luar biasa kepada para pemangku
+                      kepentingan kami."</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PT. Bukit Makmur Mandiri Utama</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kec. Paringin</p>
+            <p>Kabupaten Balangan, Kalimantan Selatan 71662</p>
+            <p class="mt-3"><strong>Telpon:</strong> <span>+62 8225 - 5645 - 936</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PT Bukit Makmur Mandiri Utama</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed By <a href="#">Ardhana</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

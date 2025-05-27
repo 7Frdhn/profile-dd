@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tentang Kami | Delta Dunia
+  </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/delta-dunia.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo3.png" alt="Delta Dunia TBK Logo">
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <style>
+          /* CSS */
+
+          .dropdown ul li a {
+
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+          }
+
+          .dropdown ul li a::after {
+            content: '';
+            display: block;
+            width: 60%;
+            /* Ubah panjang garis sesuai keinginan */
+            height: 2px;
+            background-color: #008a0e;
+            /* Warna garis */
+            position: absolute;
+            left: 9%;
+            /* Untuk memusatkan garis */
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          .dropdown ul li a:hover::after {
+            transform: scaleX(1);
+
+
+          }
+        </style>
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Tentang Kami</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+             <ul>
+               <li><a href="../tentang/visi-misi.html">Visi & Misi</a></li>
+               <li><a href="../tentang/">Manajemen</a></li>
+               <li><a href="../tentang/tonggak-sejarah">Tonggak Sejarah</a></li>
+             </ul>
+           </li>
+          <li class="dropdown"><a href="#"><span>Binis Kami</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+            <ul>
+              <li><a href="../bisnis/buma.html"  class="active">Buma</a></li>
+              <li><a href="../bisnis/buma-australia.html">Buma Australia</a></li>
+              <li><a href="../bisnis/btech.html">BTech</a></li>
+              <li><a href="../bisnis/biru.html">Biru</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="../blog.html">Rilis Berita</a></li>
+              <li><a href="#">Liputan Berita</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" style="margin-top: 70px;">
+    <style>
+      
+      .page-title {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Mengatur kolom untuk gambar dan teks */
+        align-items: stretch; /* Pastikan teks dan gambar memiliki tinggi penuh */
+        height: 450px; /* Tetapkan tinggi tetap untuk gambar dan teks */
+        padding: 0; /* Hilangkan padding untuk gambar dan teks menempel langsung */
+      }
+      
+      .content-wrapper {
+        background-color: #005068;
+        padding: 40px; /* Tambahkan padding untuk jarak yang sama rata di sekitar teks */
+        max-width: 100%; /* Batasi lebar maksimum konten teks untuk mencegah teks terlalu melebar */
+        z-index: 1; /* Pastikan teks berada di depan gambar */
+        display: flex;
+        justify-content: center; /* Pastikan teks berada di tengah secara horizontal */
+        align-items: center; /* Pastikan teks berada di tengah secara vertikal */
+        box-sizing: border-box; /* Pastikan padding dihitung dalam ukuran elemen */
+        overflow: hidden; /* Mencegah konten melebihi batas kontainer */
+      }
+      
+      .image-container {
+        background-image: url('../assets/img/bisnis/hero-aus.png'); /* Pastikan path gambar benar */
+        background-size: cover;
+        background-position: center;
+        width: 100%; /* Biarkan gambar mengisi seluruh kolom */
+        height: 100%; /* Pastikan gambar mengikuti tinggi kontainer */
+      }
+      
+      .text-content h2, .text-content p {
+        margin: 0;
+        color: #ffffff;
+        text-align: center; /* Teks berada di tengah dalam wrapper */
+      }
+      
+      /* Media Queries untuk Responsivitas */
+      @media (max-width: 768px) {
+        .page-title {
+          grid-template-columns: 1fr; /* Ubah menjadi satu kolom untuk tampilan vertikal */
+          height: auto; /* Biarkan tinggi menjadi otomatis untuk layar kecil */
+        }
+      
+        .content-wrapper {
+          max-width: 100%; /* Biarkan konten teks mengisi seluruh lebar layar */
+          width: 100%;
+          padding: 20px; /* Kurangi padding pada layar kecil */
+        }
+      
+        .image-container {
+          height: 300px; /* Tetapkan tinggi tetap yang lebih kecil untuk gambar di layar kecil */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .content-wrapper {
+          padding: 15px; /* Kurangi padding lebih jauh untuk layar sangat kecil */
+        }
+      
+        .image-container {
+          height: 200px; /* Tetapkan tinggi tetap yang lebih kecil lagi untuk gambar */
+        }
+      }
+      </style>
+      
+      <div class="page-title">
+        <div class="content-wrapper">
+          <div class="text-content">
+            <h2 class="text-grid">Membangun Keunggulan Pertambangan Selama 75 Tahun</h2>
+          </div>
+        </div>
+        <div class="image-container"></div>
+      </div>
+      
+      
+      
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+
+
+          <div class="col-lg-12 full-width" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title"></h2>
+            <div class="our-story" style="border-radius: 20px;">
+              <img src="../assets/img/buma.png" class="responsive-image"><br><br>
+              <p>Didirikan pada 2021, BUMA Australia hadir sebagai kontraktor tambang terkemuka melalui akuisisi bisnis Open Cut Mining East milik Downer. Akuisisi ini mencakup peralihan personel, kontrak layanan tambang, aset, sistem, dan kekayaan intelektual, memastikan kelanjutan dari warisan sepanjang 75 tahun di Australia.
+                <br><br>
+                BUMA Australia menawarkan berbagai layanan tambang yang komprehensif dan dapat disesuaikan untuk memenuhi kebutuhan klien. Layanan ini meliputi manajemen dan operasi situs tambang terbuka, manajemen berbasis regulasi, pengembangan dan inisiasi proyek greenfields, perencanaan tambang, manajemen aset, layanan pengeboran dan peledakan, operasi dan pemeliharaan pabrik pengolahan, rehabilitasi dan penutupan, analisis, dan usulan biaya.
+                <br><br>
+                <b>Visi</b>
+                <br><br>
+                Visi BUMA Australia adalah membangun perusahaan pertambangan dan rehabilitasi yang modern, yang mendorong pertumbuhan, keberlanjutan, dan kemakmuran.
+                <br><br>
+                BUMA Australia menerapkan pendekatan yang berfokus pada hubungan dan berkomitmen untuk berkolaborasi erat dengan klien demi menjamin keberhasilan proyek-proyek kami. Menyediakan nilai tambah pada setiap lokasi dan memastikan pemberian nilai yang maksimal kepada klien kami di setiap tahapan pertambangan merupakan inti dari operasi bisnis kami.
+
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section" style="margin-top: -50px;">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #007598;">Nilai - Nilai</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+            <div class="member-img">
+              <img src="../assets/img/bisnis/bumaaus-1.png" class="img-fluid" alt="">
+
+            </div>
+            <div class="member-info text-center">
+              <h4 style="color: #00630ad4;">Keselamatan</h4>
+
+              <p>Kami berdedikasi untuk bekerja dengan aman, ini adalah pola pikir, cara berpikir, dan komitmen terhadap kesejahteraan karyawan dan komunitas kami, serta lingkungan.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="../assets/img/bisnis/bumaaus-2.png" class="img-fluid" alt="">
+
+            </div>
+            <div class="member-info text-center">
+              <h4 style="color: #00630ad4;">Masyarakat</h4>
+
+              <p>Kekuatan terbesar kami adalah karyawan kami. Kami mengakui sejarah mereka dan menghargai bagaimana mereka berbagi masa depan bersama.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="../assets/img/bisnis/bumaaus-3.png" class="img-fluid" alt="">
+
+            </div>
+            <div class="member-info text-center">
+              <h4 style="color:  #00630ad4;">Integritas</h4>
+
+              <p>Perusahaan kami dibangun atas dasar orang baik melakukan hal yang baik, “Kami melakukan apa yang kami ucapkan”, bukan hanya slogan bagi kami. Kami melakukan apa yang kami janjikan.</p>
+            </div>
+          </div><!-- End Team Member -->
+
+
+
+          <div class="row gy-5 justify-content-center" style="margin-top: -25px;">
+            <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="../assets/img/bisnis/bumaaus-4.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info text-center">
+                <h4 style="color:  #00630ad4;">Kemajuan</h4>
+
+                <p>Kami mengejar pertumbuhan dan melihat perubahan sebagai bagian penting dari perjalanan kami.</p>
+              </div>
+            </div><!-- End Team Member -->
+
+            <div class="col-lg-4 col-md-6 member" style="margin-top: 85px;" data-aos="fade-up" data-aos-delay="500">
+              <div class="member-img">
+                <img src="../assets/img/bisnis/bumaaus-5.png" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info text-center">
+                <h4 style="color:  #00630ad4;">Kolaborasi</h4>
+
+                <p>Kami secara aktif berkolaborasi dengan para pemangku kepentingan untuk mencari solusi dan hasil yang positif.</p>
+              </div>
+            </div><!-- End Team Member -->
+          </div>
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #007598;">Lokasi Operasional</h2>
+
+      </div><!-- End Section Title -->
+    <style>
+   .page-title2 {
+  width: 90vw;
+  height: 100vh;
+  background-image: url('../assets/img/bisnis/map-aus.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto; /* Memusatkan elemen secara horizontal dan vertikal */
+}
+
+
+/* Aturan untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+  .page-title2 {
+    min-width: 50%;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title2 {
+    height: 30vh;
+  }
+}
+
+
+    </style>
+    <div class="page-title2 dark-background" data-aos="fade-up">
+    </div><!-- End Page Title -->
+
+
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background" data-aos="fade-up">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PT. Bukit Makmur Mandiri Utama</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kec. Paringin</p>
+            <p>Kabupaten Balangan, Kalimantan Selatan 71662</p>
+            <p class="mt-3"><strong>Telpon:</strong> <span>+62 8225 - 5645 - 936</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PT Bukit Makmur Mandiri Utama</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed By <a href="#">Ardhana</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

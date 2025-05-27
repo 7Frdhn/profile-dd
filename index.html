@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Delta Dunia</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/delta-dunia.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+     <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo3.png" alt="Delta Dunia TBK Logo">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <style>
+          /* CSS */
+
+          .dropdown ul li a {
+
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+          }
+
+          .dropdown ul li a::after {
+            content: '';
+            display: block;
+            width: 60%;
+            /* Ubah panjang garis sesuai keinginan */
+            height: 2px;
+            background-color: #008a0e;
+            /* Warna garis */
+            position: absolute;
+            left: 9%;
+            /* Untuk memusatkan garis */
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          .dropdown ul li a:hover::after {
+            transform: scaleX(1);
+
+
+          }
+        </style>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Tentang Kami</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+             <ul>
+               <li><a href="tentang/visi-misi.html">Visi & Misi</a></li>
+               <li><a href="tentang/">Manajemen</a></li>
+               <li><a href="tentang/tonggak-sejarah">Tonggak Sejarah</a></li>
+             </ul>
+           </li>
+          <li class="dropdown"><a href="#"><span>Binis Kami</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+            <ul>
+              <li><a href="bisnis/buma.html"  class="active">Buma</a></li>
+              <li><a href="bisnis/buma-australia.html">Buma Australia</a></li>
+              <li><a href="bisnis/btech.html">BTech</a></li>
+              <li><a href="bisnis/biru.html">Biru</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="blog.html">Rilis Berita</a></li>
+              <li><a href="#">Liputan Berita</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="active">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <main class="main"  style="margin-top: 70px;">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/home-display-5.jpg" alt="">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/home-display-3.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/home-display-2.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/home-display-6.png " alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/img8.jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/home-display-1.png" alt="">
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Get Started Section -->
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <!-- <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg"></div> -->
+
+          <div class="col-lg-12 full-width" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title"></h2>
+            <div class="our-story">
+
+              <h3>Delta Dunia Group: Menata Masa Depan Pertambangan</h3>
+              <p>Delta Dunia Group merupakan perusahaan induk dengan portofolio bisnis yang beragam, termasuk dua
+                penyedia jasa pertambangan terkemuka di Indonesia dan Australia yang menyediakan batu bara berkualitas
+                tinggi untuk berbagai perusahaan besar, sekaligus memberdayakan masyarakat sekitar. Hal ini menjadikan
+                kami perusahaan pertambangan berbasis teknologi yang fokus pada kegiatan sosial. Kami memiliki rekam
+                jejak hubungan yang solid dan panjang dengan perusahaan-perusahaan pertambangan terkemuka.
+                <br><br>
+                Selain berkomitmen untuk memberikan nilai tambah bagi seluruh pemangku kepentingan, kami senantiasa
+                menjalankan aktivitas penambangan yang bertanggung jawab, merehabilitasi lingkungan, mendorong
+                pertumbuhan lapangan kerja, dan mendukung masyarakat secara berkelanjutan. Secara aktif, kami berusaha
+                mengurangi kontribusi batu bara termal dan mengupayakan transisi penggunaan batu bara secara bertanggung
+                jawab melalui kerja sama dengan pelanggan serta karyawan kami, dan masyarakat. Kami berdedikasi untuk
+                unggul di semua bidang yang kami kerjakan serta dikenal karena praktik pertambangan yang terbaik,
+                standar keselamatan yang luar biasa, dan teknologi pertambangan terkini. Sebagai warga korporasi yang
+                bertanggung jawab, kami berupaya untuk mengatasi beberapa tantangan terbesar di industri ini dan
+                mendorong perubahan positif di sektor energi.
+                <br><br>
+
+
+                <!-- <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commo</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+              </ul>
+              <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.</p> -->
+
+              <div class="watch-video d-flex align-items-center position-relative">
+                <a href="about.html">Lebih Lanjut Tentang Kami &nbsp; </a>
+                <i class="bi bi-arrow-right-circle"></i>
+              
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Visi</h2>
+      <p>Menjadi penyedia solusi pertambangan dan energi kelas dunia yang bertanggung jawab kepada lingkungan.</p>
+    </div><!-- End Section Title -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Misi</h2>
+        <p>Menjadi penyedia solusi pertambangan dan energi kelas dunia yang bertanggung jawab kepada lingkungan.</p>
+      </div><!-- End Section Title -->
+
+      <div class="row gy-5 justify-content-center">
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <div class="member-img">
+            <img src="assets/img/values/about-mission-1a.png" class="img-fluid" alt="">
+          </div>
+          <div class="member-info text-center">
+            <p>Memenuhi kebutuhan sumber daya dunia secara efisien dan bertanggung jawab melalui solusi inovatif dan
+              berkelanjutan.</p>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
+          <div class="member-img">
+            <img src="assets/img/values/about-mission-4.png" class="img-fluid" alt="">
+          </div>
+          <div class="member-info text-center">
+            <p>Meminimalkan dampak lingkungan di area operasi kami.</p>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
+          <div class="member-img">
+            <img src="assets/img/values/about-mission-2.png" class="img-fluid" alt="">
+          </div>
+          <div class="member-info text-center">
+            <p>Memaksimalkan kontribusi sosial dan ekonomi untuk memajukan generasi masa depan.</p>
+          </div>
+        </div><!-- End Team Member -->
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h3>Lihat Bisnis Kami Lebih Dekat</h3>
+
+      </div><!-- End Section Title -->
+      <div class="container">
+
+        <ul class="nav nav-tabs row  g-2 d-flex" data-aos="fade-up" data-aos-delay="100" role="tablist">
+
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1" aria-selected="true"
+              role="tab">
+              <h4>Buma Indonesia</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2" aria-selected="false"
+              tabindex="-1" role="tab">
+              <h4>Buma Australia</h4>
+            </a><!-- End tab nav item -->
+
+          </li>
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link1" data-bs-toggle="tab" data-bs-target="#features-tab-3" aria-selected="false"
+              tabindex="-1" role="tab">
+              <h4>Bukit Technology</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link1" data-bs-toggle="tab" data-bs-target="#features-tab-4" aria-selected="false"
+              tabindex="-1" role="tab">
+              <h4>Biru Nuswantara</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Bukit Makmur Mandiri Utama (Indonesia)</h3>
+                <p class="fst-italic">
+                  Didirikan pada 1998 sebagai sebuah bisnis keluarga dan kemudian diakuisisi oleh Delta Dunia pada 2009,
+                  kini BUMA Indonesia memiliki pangsa pasar sekitar 15%, melalui penyediaan jasa pertambangan bagi
+                  beberapa perusahaan tambang terbesar dan terlama di industri batubara Indonesia, serta beberapa pemain
+                  baru yang memiliki potensi pertumbuhan yang tinggi di masa depan.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-4 text-center">
+                <img src="assets/img/logo/images.jpeg" alt="" class="img-fluid" style="   display: block;
+margin: 0 auto;  width: 80%;   height: auto;   max-width: none;">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-2" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Bukit Makmur Mandiri Utama (Australia)</h3>
+                <p class="fst-italic">
+                  Didirikan pada 2021, BUMA Australia hadir sebagai kontraktor tambang terkemuka melalui akuisisi bisnis Open Cut Mining East milik Downer. Akuisisi ini mencakup peralihan personel, kontrak layanan tambang, aset, sistem, dan kekayaan intelektual, memastikan kelanjutan dari warisan sepanjang 75 tahun di Australia.
+                </p>
+
+              </div>
+              <div class="col-lg-6 order-1 order-lg-4 text-center">
+                <img src="assets/img/logo/images.jpeg" alt="" class="img-fluid" style="   display: block;
+margin: 0 auto;  width: 80%;   height: auto;   max-width: none;">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-3" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Bukit Technology</h3>
+                <p class="fst-italic">
+                  PT Bukit Teknologi Digital (BTech) awalnya diluncurkan pada 2021 sebagai unit bisnis BUMA dan lalu dipisahkan pada tahun 2023, berevolusi sebagai entitas sendiri. Tonggak sejarah ini menyoroti solusi berbeda dari BTech, yang tetap menjadi bagian integral dari ekosistem kami sambil juga melampaui industri pertambangan untuk menciptakan peluang pertumbuhan dan dampak yang lebih luas. Beroperasi di Indonesia dan Australia, BTech merevolusi industri pertambangan sebagai penyedia teknologi pertambangan canggih end-to-end terkemuka.
+                </p>
+
+              </div>
+              <div class="col-lg-6 order-1 order-lg-4 text-center">
+                <img src="assets/img/logo/logo-home-service-3-white.png" alt="" class="img-fluid" style="   display: block;
+margin: 0 auto;  width: 80%;   height: auto;   max-width: none;">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-4" role="tabpanel">
+             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Bukit Technology</h3>
+                <p class="fst-italic">
+                  PT Bukit Teknologi Digital (BTech) awalnya diluncurkan pada 2021 sebagai unit bisnis BUMA dan lalu dipisahkan pada tahun 2023, berevolusi sebagai entitas sendiri. Tonggak sejarah ini menyoroti solusi berbeda dari BTech, yang tetap menjadi bagian integral dari ekosistem kami sambil juga melampaui industri pertambangan untuk menciptakan peluang pertumbuhan dan dampak yang lebih luas. Beroperasi di Indonesia dan Australia, BTech merevolusi industri pertambangan sebagai penyedia teknologi pertambangan canggih end-to-end terkemuka.
+                </p>
+
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/logo/logo-home-service-4-white.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+      <style>
+        .post-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 250px;
+          /* Sesuaikan tinggi gambar */
+          overflow: hidden;
+        }
+
+        .post-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .post-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-grow: 1;
+        }
+
+        article.h-100 {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+      </style>
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative">
+                <img src="assets/img/berita/berita-7.png" class="img-fluid" alt="">
+                <span class="post-date">27 Agustus 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>CQU dan BIRU Jalin Kemitraan untuk Tingkatkan Pendidikan Vokasi dan Pengembangan Tenaga Kerja
+                  Terampil di Indonesia</p>
+                <hr>
+                <a href="./detail/berita-7.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+
+  </main>
+
+   <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PT Delta Dunia Makmur Tbk.</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>South Quarter Tower A, Penthouse Floor
+              Jl. R. A Kartini Kav. 8,</p>
+            <p>Cilandak Barat
+              Jakarta 12430 – Indonesia</p>
+            <p ><strong>Telpon:</strong> <span>+6221 3043 2080</span></p>
+            <p ><strong>Fax:</strong> <span>+6221 3043 2081</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PT Bukit Makmur Mandiri Utama</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed By <a href="#">Ardhana</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

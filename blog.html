@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Media | Delta Dunia</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/delta-dunia.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="blog-page">
+
+   <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo3.png" alt="Delta Dunia TBK Logo">
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <style>
+          /* CSS */
+
+          .dropdown ul li a {
+
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+          }
+
+          .dropdown ul li a::after {
+            content: '';
+            display: block;
+            width: 60%;
+            /* Ubah panjang garis sesuai keinginan */
+            height: 2px;
+            background-color: #008a0e;
+            /* Warna garis */
+            position: absolute;
+            left: 9%;
+            /* Untuk memusatkan garis */
+            bottom: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          .dropdown ul li a:hover::after {
+            transform: scaleX(1);
+
+
+          }
+        </style>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Binis Kami</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+            <ul>
+              <li><a href="bisnis/buma.html">Buma</a></li>
+              <li><a href="bisnis/buma-australia.html">Buma Australia</a></li>
+              <li><a href="bisnis/btech.html">BTech</a></li>
+              <li><a href="bisnis/biru.html">Biru</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li class="dropdown"><a href="#"><span>Media</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="blog.html" class="active">Rilis Berita</a></li>
+              <li><a href="#">Liputan Berita</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background"
+      style="background-image: url(assets/img/berita/pngtree-blue-technology-news-background-image_782264.jpg);">
+      <div class="container position-relative">
+        <h1>Rilis Berita</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Berita</a></li>
+            <li class="current">Rilis Berita</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+      <style>
+        .post-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 250px;
+          /* Sesuaikan tinggi gambar */
+          overflow: hidden;
+        }
+
+        .post-img img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .post-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-grow: 1;
+        }
+
+        article.h-100 {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+      </style>
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative">
+                <img src="assets/img/berita/berita-7.png" class="img-fluid" alt="">
+                <span class="post-date">27 Agustus 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>CQU dan BIRU Jalin Kemitraan untuk Tingkatkan Pendidikan Vokasi dan Pengembangan Tenaga Kerja
+                  Terampil di Indonesia</p>
+                <hr>
+                <a href="./detail/berita-7.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative">
+                <img src="assets/img/berita/berita-1.jpg" class="img-fluid" alt="">
+                <span class="post-date">14 Agustus 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>BUMA Raih Kontrak Jasa Pertambangan Senilai Rp12 Triliun dari PT Persada Kapuas Prima</p>
+                <hr>
+                <a href="./detail/berita-1.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/berita/berita-2.png" class="img-fluid" alt="">
+                <span class="post-date">1 Agustus 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>
+                  Delta Dunia Grup Catatkan Hasil Tangguh di Semester I - 2024 di Tengah Kondisi Cuaca Ekstrem dan
+                  Pelemahan Nilai Tukar Mata Uang.
+                </p>
+
+                <hr>
+
+                <a href="./detail/berita-2.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative">
+                <img src="assets/img/berita/berita-3.png" class="img-fluid" alt="">
+                <span class="post-date">1 Juli 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>Delta Dunia Group Rampungkan Akuisisi Atlantic Carbon Group, Inc, Produsen Antrasit Ultra-High-Grade
+                  Utama di Dunia</p>
+                <hr>
+                <a href="./detail/berita-3.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative">
+                <img src="assets/img/berita/berita-4.jpg" class="img-fluid" alt="">
+                <span class="post-date">24 Juni 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>Delta Dunia Group Tunjukkan Keunggulan Operasional dan Peningkatan Ketahanan Finansial di Kuartal
+                  Pertama 2024</p>
+                <hr>
+                <a href="./detail/berita-4.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+
+          <div class="col-lg-4">
+            <article class="position-relative h-100">
+
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/berita/berita-5.jpg" class="img-fluid" alt="">
+                <span class="post-date">5 Juni 2024</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+                <p>
+                  Delta Dunia Group Perluas Bisnis Global dengan Kepemilikan Tambang melalui Akuisisi Atlantic Carbon
+                  Group
+                </p>
+
+                <hr>
+
+                <a href="./detail/berita-5.html" class="readmore stretched-link"><span>Baca Selengkapnya</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Posts Section -->
+
+    <!-- Blog Pagination Section -->
+    <section id="blog-pagination" class="blog-pagination section">
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="2/blog.html">2</a></li>
+            <!-- <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li> -->
+            <li><a href="2/blog.html"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section><!-- /Blog Pagination Section -->
+
+  </main>
+
+   <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PT Delta Dunia Makmur Tbk.</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>South Quarter Tower A, Penthouse Floor
+              Jl. R. A Kartini Kav. 8,</p>
+            <p>Cilandak Barat
+              Jakarta 12430 – Indonesia</p>
+            <p ><strong>Telpon:</strong> <span>+6221 3043 2080</span></p>
+            <p ><strong>Fax:</strong> <span>+6221 3043 2081</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">PT Bukit Makmur Mandiri Utama</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed By <a href="#">Ardhana</a>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
